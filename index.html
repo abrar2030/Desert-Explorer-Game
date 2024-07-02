@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desert Explorer Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="name"></div>
+    <div id="homeScreen">
+      <input type="text" id="playerName" placeholder="Enter your name" />
+      <input
+        type="number"
+        id="initialWaterSupply"
+        placeholder="Set initial water supply"
+        min="1"
+        max="10"
+        value="6"
+      />
+      <input
+        type="number"
+        id="initialTime"
+        placeholder="Set initial time (in minutes)"
+        min="1"
+        value="10"
+      />
+      <button id="startGame">Start Game</button>
+    </div>
+    <div id="gameContainer" style="display: none">
+      <h1>Desert Explorer</h1>
+      <div id="gameBoard" class="game-board"></div>
+      <div id="gameInfo">
+        <p id="waterSupply">Water Supply: 6</p>
+        <p id="foundParts">Parts Found: 0</p>
+        <p id="timer">Time Left: 10:00</p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="arrays.js"></script>
+    <script src="functions.js"></script>
+  </body>
+</html>
